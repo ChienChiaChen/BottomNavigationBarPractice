@@ -3,4 +3,11 @@
     <string name="item_1">item_1</string>
     <string name="item_2">item_2</string>
     <string name="item_3">item_3</string>
+
+
+    <string name="tab_title_home">Home</string>
+    <string name="tab_title_diary">Diary</string>
+    <string name="tab_title_dna_report">DNA Report</string>
+    <string name="tab_title_my_coach">My Coach</string>
+    <string name="tab_title_more">More </string>
 </resources>
