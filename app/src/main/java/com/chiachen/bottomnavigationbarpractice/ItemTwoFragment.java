@@ -7,12 +7,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * Created by jianjiacheng on 10/11/2017.
  */
 
 public class ItemTwoFragment extends Fragment {
+
+    public static final String TAG = "ItemTwoFragment";
+    private int counter;
 
     public static Fragment newInstance(){
         return new ItemTwoFragment();
@@ -32,8 +36,15 @@ public class ItemTwoFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        view.findViewById(R.id.add).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                counter++;
+                ((TextView)view.findViewById(R.id.add_text)).setText(""+counter);
+            }
+        });
         Log.e("JASON_CHIEN", "\nonViewCreated");
     }
 
