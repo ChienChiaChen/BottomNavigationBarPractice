@@ -12,6 +12,8 @@ import android.view.ViewGroup;
  */
 
 public class ItemSixFragment extends Fragment {
+    public static final String TAG = "ItemSixFragment";
+
     public static Fragment newInstance() {
         return new ItemSixFragment();
     }
